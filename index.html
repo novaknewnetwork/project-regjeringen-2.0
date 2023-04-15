@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Regjeringen</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper__container">
+            <div class="header">
+                <div class="header__body">
+                    <div class="header__top top-header">
+                        <div class="container">
+                            <div class="top-header__body">
+                                <div class="menu__burger"><span></span></div>    
+                                <ul class="top-header__list">
+                                    <li class="fontSize">
+                                        <button onclick="fontSize()" type="button" class="fontSizeButton">Skriftstørrelse</button>
+                                        <p id="fontSize"  class="fontsizeText">For å endre tekststørrelse, hold CTRL-tasten nede (CMD-tasten nede på MAC) og trykk på + for å øke eller - for å forminske</p>
+                                    </li>
+                                    <li class="languages">
+                                        <button onclick="languages()"  type="button" class="languagesButton">Norsk</button>
+                                        <ul id="languages" class="languagesList">
+                                            <li class="languagesList__item">
+                                                <div class="languagesList__image"><img src="./img/header/icons/norway.png" alt="NOR"></div>
+                                                <a href="" class="languagesList__link">Viser denne siden på Norsk</a>
+                                            </li>
+                                            <li class="languagesList__item">
+                                                <div class="languagesList__image"><img src="./img/header/icons/english.png" alt="GBR"></div>
+                                                <a href="" class="languagesList__link">Show this page in English</a>
+                                            </li>
+                                            <li class="languagesList__item">
+                                                <div class="languagesList__image"><img src="./img/header/icons/sweden.png" alt="SWE"></div>
+                                                <a href="" class="languagesList__link">Visa denna sida på Svenska</a>
+                                            </li>
+                                            <li class="languagesList__item">
+                                                <div class="languagesList__image"><img src="./img/header/icons/Ukraine.png" alt="UKR"></div>
+                                                <a href="" class="languagesList__link">Показати сторінку на Українській</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>     
+                    </div>
+                    <div class="header__main main-header">
+                        <div class="container">
+                            <div class="main-header__body">
+                                <div class="main-header__title title-main-header">
+                                    <a class="title-main-header__logo"><img src="./img/header/logo.png" alt="logo"></a>
+                                    <span class="title-main-header__span"></span>
+                                    <a class="title-main-header__link">Regjeringen.no</a>
+                                </div>   
+                                <div class="main-header__form">
+                                    <form action="" class="form-header">
+                                        <input type="text" autocomplete="off" placeholder="Søk" class="form-header__input">
+                                        <button type="submit" class="form-header__button">Søk</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="body__burger">
+                        <div class="main-header__form main-header__form_adaptive">
+                            <form action="" class="form-header">
+                                <input type="text" autocomplete="off" placeholder="Søk" class="form-header__input">
+                                <button type="submit" class="form-header__button">Søk</button>
+                            </form>
+                        </div>
+                        <div class="header__bottom bottom-header">
+                            <div class="container">
+                                <div class="bottom-header__body">
+                                    <nav class="bottom-header__menu menu">
+                                        <ul class="menu__list">
+                                            <li class="menu__item">
+                                                <a href="" class="menu__link">Tema</a>
+                                                <div class="sublist__block block block-tema">
+                                                    <div class="block__container">
+                                                        <div class="block__top top-block">
+                                                            <a href="" class="top-block__link">Finn Tema</a>
+                                                            <button class="top-block__btn">lukk</button>
+                                                        </div>
+                                                        <div class="block__content content-block">
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Arbeidsliv</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Bærekraftsmålene</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Energi</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Europapolitikk</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Familie og barn</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Forbruker</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Forskning</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Forsvar</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Hav</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Helse og omsorg</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Innvandring og integrering</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Klima og miljo</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Kommuner og regioner</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> Koronasituasjonen</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Kultur, idrett og frivillighet</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Likestilling og mangfold</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Lov og rett</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> Mat, fiske og landbruk</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Nordområdene</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Næringsliv</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Pensjon, trygd og sosiale tjenester</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Plan, bygg og eiendom</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Samfunnssikkerhet og beredskap</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Statlig forvaltning</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Svalbard og polarområdene</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Transport og kommunikasjon</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Tro og livssyn</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Ukraina</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> Urfolk og minoriteter</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Utdanning</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Utenrikssaker</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Valg og demokrati</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Økonomi og budsjett</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sublist__bottom"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="" class="menu__link">Dokument</a>
+                                                <div class="sublist__block block block-document">
+                                                    <div class="block__container">
+                                                        <div class="block__top top-block">
+                                                            <a href="" class="top-block__link">Finn dokument</a>
+                                                            <button class="top-block__btn">lukk</button>
+                                                        </div>
+                                                        <div class="block__content content-block">
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Statsbudsjettet 2023</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Høyringar</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Proposisjonar til Stortinget</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Meldingar til Stortinget</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> NOU-ar</a></li>    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Veiledninger og brosjyre</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Rapportar, planar og strategiar</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Tildelingsbrev, instruksar og årsrapportar</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Brev</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Anbud og konsesjoner</a></li>    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Lover og regler</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Lover</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Forskrifter</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Kongelige resolusjoner</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Retningslinjer og juridiske veiledninger</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Tolkningsuttalelser</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Reglement</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Rundskriv</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sublist__bottom bottom-sublist">
+                                                            <a href="#" class="bottom-sublist__link">Bestilling av trykte publikasjoner</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="" class="menu__link">Aktuelt</a>
+                                                <div class="sublist__block block block-aktuelt">
+                                                    <div class="block__container">
+                                                        <div class="block__top top-block">
+                                                            <a href="" class="top-block__link">Aktuelt</a>
+                                                            <button class="top-block__btn">lukk</button>
+                                                        </div>
+                                                        <div class="block__content content-block">
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Nyheter og pressemeldinger</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> Pressekonferanser og nett-tv</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Taler og innlegg</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Kalender</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Svar til Stortinget</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Offisielt frå statsrådet</a></li>  
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Pressekontakter</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">eInnsyn – elektronisk postjournal</a></li>
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Ledige stillinger</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sublist__bottom bottom-sublist">
+                                                            <a href="#" class="bottom-sublist__link">Historisk arkiv</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="" class="menu__link">Departement</a>
+                                                <div class="sublist__block block block-departement">
+                                                    <div class="block__container">
+                                                        <div class="block__top top-block">
+                                                            <a href="" class="top-block__link">Departementene</a>
+                                                            <button class="top-block__btn">lukk</button>
+                                                        </div>
+                                                        <div class="block__content content-block">
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Statsministerens kontor</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Jonas Gahr Støre (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Arbeids- og inkluderingsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Marte Mjøs Persen (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Barne- og familiedepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Kjersti Toppe (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Finansdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Trygve Slagsvold Vedum (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Forsvarsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Bjørn Arild Gram (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Helse- og omsorgsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Ingvild Kjerkol (Ap)</a></li>  
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Justis- og beredskapsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Emilie Enger Mehl (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Klima- og miljødepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Espen Barth Eide (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Kommunal- og distriktsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Sigbjørn Gjelsvik (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link"> Kultur- og likestillingsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Anette Trettebergstuen (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Kunnskapsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Tonje Brenna (Ap) Ola Borten Moe (Sp)</a></li>  
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Landbruks- og matdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Sandra Borch (Sp)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Nærings- og fiskeridepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Jan Christian Vestre (Ap) Bjørnar Selnes Skjæran (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Olje- og energidepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Terje Aasland (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Samferdselsdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Jon-Ivar Nygård (Ap)</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Utenriksdepartementet</a></li>
+                                                                    <li class="block-departement-list__item"><a href="" class="block-list__link">Anniken Huitfeldt (Ap) Anne Beathe Tvinnereim (Sp)</a></li>  
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sublist__bottom bottom-sublist">
+                                                            <a href="#" class="bottom-sublist__link">Etater, virksomheter og selskaper</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="menu__item">
+                                                <a href="" class="menu__link">Regjering</a>
+                                                <div class="sublist__block block block-regjering">
+                                                    <div class="block__container">
+                                                        <div class="block__top top-block">
+                                                            <a href="" class="top-block__link">Regjering</a>
+                                                            <button class="top-block__btn">lukk</button>
+                                                        </div>
+                                                        <div class="block__content content-block">
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Regjeringen Støre</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Regjeringens medlemmer</a></li>  
+                                                                </ul>
+                                                                <ul class="column-content-block__list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Statlige styrer, råd og utvalg</a></li>  
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Slik blir Norge styrt</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Regjeringen i arbeid</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Kva skjer ved eit regjeringsskifte?</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Film om korleis Noreg styres</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Slik blir lover til</a></li>    
+                                                                </ul>
+                                                            </div>
+                                                            <div class="content-block__column column-content-block">
+                                                                <ul class="column-content-block__list block-list">
+                                                                    <li class="column-content-block__item"><a href="" class="column-content-block__link">Tidligere regjeringer og historie</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Søk i regjeringer siden 1814</a></li>
+                                                                    <li class="block-list__item"><a href="" class="block-list__link">Statistikk</a></li>    
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sublist__bottom bottom-sublist">
+                                                            <a href="#" class="bottom-sublist__link">Historisk arkiv</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__actions actions-header">
+                            <div class="container">
+                                <div class="actions-header__body">
+                                    <nav class="actions-header__menu menu-actions-header">
+                                        <ul class="menu-actions-header__list">
+                                            <li class="menu-actions-header__item"><p class="menu-actions-header__text">Du er her:</p></li>
+                                            <li class="menu-actions-header__item"><a href="" class="menu-actions-header__link">Forsiden</a></li>
+                                            <li class="menu-actions-header__item item-element">
+                                                <a href="" class="menu-actions-header__link">Departementene</a>
+                                                <ul class="menu-actions-header__sublist sublist-actions-header">
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Departementene</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Utenriksdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Statsministerens kontor</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Arbeids- og inkluderingsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Barne- og familiedepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Finansdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Forsvarsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Helse- og omsorgsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Justis- og beredskapsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Klima- og miljødepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Kommunal- og distriktsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Kultur- og likestillingsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Kunnskapsdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Landbruks- og matdepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Nærings- og fiskeridepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Olje- og energidepartementet</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Samferdselsdepartementet</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-actions-header__item item-element">
+                                                <a href="" class="menu-actions-header__link">Olje-og energidepartementet</a>
+                                                <ul class="menu-actions-header__sublist sublist-actions-header">
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Ansvarsområder</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Organisering og ledelse</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Ledige stillinger</a></li>
+                                                    <li class="sublist-actions-header__item"><a href="" class="sublist-actions-header__link">Kontakt</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="actions-header__buttons">
+                                        <div class="actions-header__btn">
+                                            <img src="./img/header/icons/share_2.png" width="15px" height="15px" alt="sharing">
+                                            <button class="sharingButton" type="button">Del/tips</button>
+                                        </div>
+                                        <div class="actions-header__btn">
+                                            <img src="./img/header/icons/print_2.png" width="15px" height="15px" alt="print">
+                                            <button class="printButton" type="button">Skriv ut</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <main class="page">
+                <section class="ministry">
+                    <div class="container">
+                        <div class="ministry__body">
+                            <div class="ministry__header">
+                                <h1 class="ministry__title title">Olje- og energidepartementet</h1>
+                            </div>
+                            <div class="ministry__content content-ministry">
+                                <div class="content-ministry__info info-content-ministry">
+                                    <a href="" class="info-content-ministry__link">Terje Aasland<span>(Ap)</span></a>
+                                    <h4 class="info-content-ministry__subtitle">Olje- og energiminister</h4>
+                                    <p class="info-content-ministry__text">Olje- og energidepartementets (OED) hovedoppgave er å tilrettelegge en samordnet og helhetlig energipolitikk.</p>
+                                </div>
+                                <div class="content-ministry__items">
+                                    <div class="content-ministry__item">
+                                        <a href="" class="content-ministry__link">Om departementet</a>
+                                    </div>
+                                    <div class="content-ministry__item">
+                                        <a href="" class="content-ministry__link">Kontakt</a>
+                                    </div>
+                                    <div class="content-ministry__item">
+                                        <a href="" class="content-ministry__link">For pressen</a>
+                                    </div>
+                                    <div class="content-ministry__item">
+                                        <a href="" class="content-ministry__link">Nyheter</a>
+                                    </div>
+                                    <div class="content-ministry__item">
+                                        <a href="" class="content-ministry__link">Ledige stillinger</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="categories">
+                    <div class="container">
+                        <div class="categories__body">
+                            <div class="categories__title">
+                                <h2 class="title title_element">Tema og innsikt</h2>    
+                            </div>
+                            <nav class="categories__navigation navigation-categories">
+                                <ul class="navigation-categories__list">
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Energi</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Olje og gass</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Fornybar energi</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Strømnettet</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">CO2-håndtering</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Statlig eierskap i energisektoren</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">EU/EØS og energi</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Havbunnsmineraler</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Energi- og petroleumsforskning</a></li>
+                                    <li class="navigation-categories__item"><a href="#" class="navigation-categories__link">Flom og skred</a></li>
+                                </ul>
+                            </nav>
+                            <div class="categories__content content">
+                                <div class="content__columns">
+                                    <div class="content__col col-content content__col_double">
+                                        <a class="col-content__image col-content__image_double"><img src="./img/categories/01.webp" alt="image"></a>
+                                        <h4 class="col-content__subtilte">Olje og gass</h4>
+                                        <a href="" class="col-content__title">Norsk oljehistorie</a>
+                                        <p class="col-content__text">De første utvinningstillatelsene ble tildelt midt på 1960-tallet. 50 år senere er næringen Norges viktigste både når det gjelder inntekter til statskassen, investeringer og andel av total verdiskaping.</p>
+                                        <ul class="col-content__list content__list">
+                                            <li class="col-content__item"><a href="#" class="col-content__link">Tema: Olje og gass</a></li>
+                                            <li class="col-content__item"><a href="http://www.norskpetroleum.no/" class="col-content__link">www.norskpetroleum.no</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content__col col-content content__col_small">
+                                        <a class="col-content__image col-content__image_small"><img src="./img/categories/02.jpg" alt="image"></a>
+                                        <h4 class="col-content__subtilte">Vannkraft</h4>
+                                        <a href="" class="col-content__title">Norsk vannkrafthistorie</a>
+                                        <p class="col-content__text">Det moderne Norge ble bygd og industrialisert gjennom at vi klarte å ta i bruk elver og fossefall til kraftproduksjon. Vannkraft er fortsatt bærebjelken i det norske kraftsystemet, og vil være det i overskuelig framtid.</p>
+                                        <ul class="col-content__list content__list">
+                                            <li class="col-content__item"><a href="#" class="col-content__link">Tema: Fornybar energi</a></li>
+                                            <li class="col-content__item"><a href="http://www.energifaktanorge.no/" class="col-content__link">www.energifaktanorge.no</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content__link"><a href="" class="link">Se alle tema</a></div>   
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="documents">
+                    <div class="container">
+                        <div class="documents__body">
+                            <div class="documents__title">
+                                <h2 class="title title_element">Dokumenter</h2>
+                            </div>
+                            <div class="content">
+                                <div class="content__columns">
+                                    <div class="content__col col-content content__col_small">
+                                        <a href="" class="col-content__title">Tilleggsmelding til Meld. St. 36 (2020–2021)</a>
+                                        <p class="col-content__text">Regjeringen la frem tilleggsmelding til Meld. St. 36 (2020–2021) Energi til arbeid – langsiktig verdiskaping fra norske energiressurser 8. april 2022.</p>
+                                        <ul class="col-content__list content__list">
+                                            <li class="col-content__item"><a href="#" class="col-content__link">Meld. St. 36 (2020–2021)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content__col col-content content__col_small">
+                                        <h4 class="col-content__subtilte">NOU 2022: 6</h4>
+                                        <a href="" class="col-content__title">Nett i tide - om utvikling av strømnettet</a>
+                                        <p class="col-content__text">Utredning levert fra Strømnettutvalget til Olje- og energidepartementet 14. juni 2022. Utredningen inneholder vurderinger av tiltak for å redusere tiden det tar å utvikle og konsesjonsbehandle nye nettanlegg, prinsipper for å ivareta en samfunnsøkonomisk utvikling av strømnettet i en tid med stor usikkerhet ved forbruksutviklingen, og forbedringer i systemet med tilknytningsplikt.</p>
+                                        <ul class="col-content__list content__list">
+                                            <li class="col-content__item"><a href="#" class="col-content__link">Strømnettutvalgets nettsted</a></li>    
+                                        </ul>
+                                    </div>
+                                    <ul class="col-content__list content__list col-content__list_small">
+                                        <li class="col-content__item"><p class="">Siste dokumenter</p></li>
+                                        <li class="col-content__item"><a href="#" class="col-content__link">Høyring av forslag til endringar i tarifforskrifta</a></li>
+                                        <li class="col-content__item"><span>Høring</span>|<span>21.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Høring - forslag til endringer i petroleumsforskriften</a></li>
+                                        <li class="col-content__item"><span>Høring</span>|<span>15.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Høring - heving av grensen for krav om funksjonelt skille</a></li>
+                                        <li class="col-content__item"><span>Høring</span>|<span>14.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Regjeringens videre arbeid med oppfølging av kraftsituasjonen</a></li>
+                                        <li class="col-content__item"><span>Brev</span>|<span>15.08.2022</span></li>
+                                    </ul>
+                                </div>
+                                <div class="content__link"><a href="" class="link">Finn dokument</a></div>   
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="container">
+                        <div class="news__body">
+                            <div class="news__title">
+                                <h2 class="title title_element">Aktuelt fra departementet</h2>
+                            </div>
+                            <div class="content">
+                                <div class="content__columns content__columns_top">
+                                    <div class="content__col col-content content__col_double">
+                                        <a class="col-content__image col-content__image_double"><img src="./img/news/01.jpg" alt="image"></a>
+                                        <a href="" class="col-content__title">Skjerper beredskapen på norsk sokkel</a>
+                                        <p class="col-content__text">Regjeringen har besluttet å iverksette tiltak for å skjerpe beredskapen knyttet til infrastruktur, landanlegg og installasjoner på norsk sokkel.</p>
+                                    </div>
+                                    <div class="content__col col-content content__col_small">
+                                        <a class="col-content__image col-content__image_small"><img src="./img/news/02.png" alt="image"></a>
+                                        <a href="" class="col-content__title">Regjeringen med milliardpakke i strømstøtte</a>
+                                        <p class="col-content__text">Regjeringen har innført flere midlertidige støtteordninger som skal hjelpe vanlige folk i hele landet med å håndtere de rekordhøye strømprisene gjennom 2022. Få en oversikt over alle støtteordningene her.</p>
+                                    </div>
+                                </div>
+                                <div class="content__columns">
+                                    <div class="content__col col-content content__col_small">
+                                        <a class="col-content__image col-content__image_small"><img src="./img/news/03.png" alt="image"></a>
+                                        <a href="" class="col-content__title">Olje- og energiminister Terje Aaslands redegjørelse i Stortinget om kraftsituasjonen 19. september</a>
+                                        <p class="col-content__text">Olje- og energiminister Terje Aasland holdt dette innlegget i Stortinget 19. september der han redegjorde om energisituasjonen, de ekstremt høye strømprisene og regjeringens tiltak for å motvirke de negative konsekvensene dette medfører både på kort, mellomlang og lang sikt.</p>
+                                        <ul class="col-content__list content__list">
+                                            <li class="col-content__item"><a href="#" class="col-content__link">Spørsmål og svar om kraftsituasjonen</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="content__col col-content content__col_small">
+                                        <a class="col-content__image col-content__image_small"><img src="./img/news/04.jpg" alt="image"></a>
+                                        <a href="" class="col-content__title">Eksterne utredninger av kraftsituasjonen</a>
+                                        <p class="col-content__text">Olje- og energidepartementet varslet i mars at kraftsituasjonen vinteren 2021-22 skulle gjennomgås, og det ble i den anledning bestilt flere eksterne utredninger. Disse utredningene har vært sentrale for å få en ytterligere forståelse av kraftsituasjonen og for videre vurdering av tiltak som kan avhjelpe situasjonen. Se de foreløpige vurderingene her.</p>
+                                    </div>
+                                    <ul class="col-content__list content__list col-content__list_small">
+                                        <li class="col-content__item"><p class="">Siste nytt</p></li>
+                                        <li class="col-content__item"><a href="#" class="col-content__link">Skjerper beredskapen på norsk sokkel</a></li>
+                                        <li class="col-content__item"><span>Pressemelding</span>|<span>27.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Opening of the Baltic Pipe line</a></li>
+                                        <li class="col-content__item"><span>Tale/innlegg</span>|<span>27.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Eksterne utredninger av kraftsituasjonen</a></li>
+                                        <li class="col-content__item"><span>Nyhet</span>|<span>26.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Utdrag frå olje- og energiminister Terje Aaslands kalender for veke 39</a></li>
+                                        <li class="col-content__item"><span>Pressemelding</span>|<span>23.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Redegjørelse i Stortinget om kraftsituasjonen 19. september 2022</a></li>
+                                        <li class="col-content__item"><span>Tale/innlegg</span>|<span>19.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Konsekvenser av høye kraftpriser og strømstønad</a></li>
+                                        <li class="col-content__item"><span>Nyhet</span>|<span>16.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Utdrag frå olje- og energiminister Terje Aaslands kalender for veke 38</a></li>
+                                        <li class="col-content__item"><span>Pressemelding</span>|<span>16.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Møte om energikrisen i Europa</a></li>
+                                        <li class="col-content__item"><span>Pressemelding</span>|<span>14.09.2022</span></li>
+                                        <li class="col-content__item"><a href="" class="col-content__link">Ministermøte i Nordsjøsamarbeidet</a></li>
+                                        <li class="col-content__item"><span>Nyhet</span>|<span>14.09.2022</span></li>
+                                    </ul>
+                                </div>
+                                <div class="content__link"><a href="" class="link">Flere aktuelle saker</a></div>   
+                            </div>
+                            <div class="news__actions">
+                                <a href="" class="news__actions-link">Abonner på nyheitsvarsel</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contacts">
+                    <div class="container">
+                        <div class="content__columns">
+                            <ul class="col-content__list content__list col-content__list_small">
+                                <li class="col-content__item"><p class="">Hurtigvalg</p></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Nyheter og pressemeldinger </a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Pressevakt OED</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Beredskap i energisektoren</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Tildelingsbrev og årsrapporter</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Kalender</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Taler og innlegg</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Svar til Stortinget</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">eInnsyn - offentlig elektronisk postjournal</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link"> Nett-TV</a></li>      
+                                <li class="col-content__item"><a href="#" class="col-content__link">Lover og regler</a></li>      
+                            </ul>
+                            <ul class="col-content__list content__list col-content__list_small contacts_list">
+                                <li class="col-content__item"><a href="#" class="col-content__link">Statsbudsjettet</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">EITI.no - Extractive Industries Transparency Initiative</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">NorskPetroleum.no</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">EnergifaktaNorge.no</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Jobb i Olje- og energidepartementet</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link"> Gjerdrumutvalget</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link"> Strømnettutvalget</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link"> Energikommisjonen</a></li>            
+                            </ul>
+                            <ul class="col-content__list content__list col-content__list_small">
+                                <li class="col-content__item"><p class="">Kontakt</p></li>
+                                <li class="col-content__item"><a href="mailto:postmottak@oed.dep.no" class="col-content__link">E-post: Postmottak@oed.dep.no</a></li>
+                                <li class="col-content__item"><a href="tel:22249090" class="col-content__link">Telefon: 22 24 90 90</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link"> Adresse: Postboks 8148 Dep, 0033 Oslo</a></li>
+                                <li class="col-content__item"><a href="#" class="col-content__link">Besøksadresse: Akersgata 59, 0033 Oslo</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts__socials socials-contacts">
+                            <a href="" class="socials-contacts__link"><img src="./img/contacts/icons/instagram_2.png" alt="facebook"></a>
+                            <a href="" class="socials-contacts__link"><img src="./img/contacts/icons/facebook_2.png" alt="instagram"></a>
+                            <a href="" class="socials-contacts__link"><img src="./img/contacts/icons/twitter_2.png" alt="twitter"></a>
+                        </div>
+                        <div class="contacts__comment comment-contacts">
+                            <h2 class="comment-contacts__title">Fant du det du lette etter?</h2>
+                            <div class="comment-contacts__content">
+                                <div class="comment-contacts__option option-comment-contacts">
+                                    <button  type="button" class="option-comment-contacts__button">Ja</button>
+                                    <div  class="option-comment-contacts__user">
+                                        <form action="" autocomplete="off" method="post" class="option-comment-contacts__form">
+                                            <label for="commentTextarea" class="option-comment-contacts__label">Kommentar:</label>
+                                            <textarea class="option-comment-contacts__area" name="commentTextarea" id="commentTextarea" cols="20" rows="6" maxlength="255"
+                                             placeholder="Sa bra! Hva lette du etter? Din tilbakemelding hjelper oss a lage et bedre nettsted. Tilbakemendingen blir ikke besvard. Du ma ikke sende personlig infomasjon, for eksempel e-post eller telefonnummer"></textarea>
+                                            <button type="submit" class="commentButton">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="comment-contacts__option option-comment-contacts">
+                                    <button type="button" class="option-comment-contacts__button">Nei</button>
+                                    <div class="option-comment-contacts__user">
+                                        <form action="" autocomplete="off" method="post" class="option-comment-contacts__form">
+                                            <label for="commentTextarea" class="option-comment-contacts__label">Kommentar:</label>
+                                            <textarea class="option-comment-contacts__area" name="commentTextarea" id="commentTextarea" cols="20" rows="6" maxlength="255"
+                                             placeholder="Sa bra! Hva lette du etter? Din tilbakemelding hjelper oss a lage et bedre nettsted. Tilbakemendingen blir ikke besvard. Du ma ikke sende personlig infomasjon, for eksempel e-post eller telefonnummer"></textarea>
+                                            <button type="submit" class="commentButton">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>    
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__body">
+                        <div class="footer__column column-footer">
+                            <div class="footer-main-links">
+                                <a href="" class="column-footer__logo"><img src="./img/footer/logo.png" alt="logo"></a>
+                                <a class="column-footer__title">Regjeringen.no</a>
+                            </div>    
+                        </div>
+                        <div class="footer__column column-footer">
+                            <ul class="column-footer__list">
+                                <li class="column-footer__item"><a href="" class="column-footer__link column-footer__link_title">Om nettstedet</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link"> Strategi og organisering av regjeringen.no</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Innholdsstrategi for regjeringen.no</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Personvernerklæring for regjeringen.no</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Bruks- og opphavsrett for bilder og videomateriale</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Besøksstatistikk</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Nyhetsvarsel</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link"> RSS</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Tilgjengelighet</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__column column-footer">
+                            <ul class="column-footer__list">
+                                <li class="column-footer__item"><p class="footer-contact__text">Ansvarlig for</p><a href="" class="column-footer__link">Olje- og energidepartementets sider:</a></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">Ansvarlig redaktør:</p><a href="" class="column-footer__link"> Arvid Samland</a></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">Nettredaktør:</p><a href="" class="column-footer__link"> Margrete Løbben Hanssen</a></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">Tlf: 22 24 90 90</p></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">E-post:</p><a href="" class="column-footer__link"> postmottak@oed.dep.no</a></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">Ansatte i OED:</p><a href="" class="column-footer__link"> Depkatalog</a></li>
+                                <li class="column-footer__item"><a href="" class="column-footer__link">Personvernerklæring for Olje- og energidepartementet</a></li>
+                                <li class="column-footer__item"><p class="footer-contact__text">Organisasjonsnummer: 977 161 630</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
